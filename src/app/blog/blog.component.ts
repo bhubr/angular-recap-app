@@ -1,10 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-interface Post {
-  id: number;
-  title: string;
-  body: string
-}
+import { Post } from '../types';
 
 @Component({
   selector: 'app-blog',
