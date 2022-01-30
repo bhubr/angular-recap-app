@@ -1,5 +1,10 @@
 <p *ngIf="isLoading">Loading data, please wait!</p>
 <div *ngIf="!isLoading">
   <h2>{{ title }}</h2>
-  <img [src]="imageUrl" alt="Angular logo" />
+  <img [src]="imageUrl" alt="Angular logo" style="max-height: 100px;" />
+
+  <article *ngFor="let post of posts">
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.body }}</p>
+  </article>
 </div>
