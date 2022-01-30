@@ -8,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class BlogComponent implements OnInit {
   title = 'My personal blog';
   imageUrl = 'https://angular.io/assets/images/logos/angular/angular.svg';
+  isLoading = true;
 
   constructor() { }
 
   ngOnInit(): void {
+    setTimeout(() => { this.isLoading = false; }, 2000);
   }
 
 }
